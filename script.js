@@ -28,15 +28,35 @@
 
 // console.log(res);
 
-function x() {
-  var i = 1;
+// function x() {
+//   var i = 1;
 
-  setTimeout(function () {
-    console.log(i);
-    i++;
-  }, i * 1000);
+//   setTimeout(function () {
+//     console.log(i);
+//     i++;
+//   }, i * 1000);
 
-  console.log("Namaste JavaScript");
-}
+//   console.log("Namaste JavaScript");
+// }
 
-x();
+// x();
+
+const p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Promise1 Resolved");
+  }, 3000);
+});
+
+const p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Promise2 Resolved");
+  }, 2000);
+});
+
+const p3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Promise3 Resolved");
+  }, 2000);
+});
+
+Promise.all([p1, p2, p3]).then((response) => console.log(response));
