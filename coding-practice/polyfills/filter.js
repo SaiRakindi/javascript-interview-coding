@@ -1,3 +1,6 @@
+//Polyfill for Filter
+//Syntax : array.filter((item, index, array) => {})
+
 Array.prototype.myFilter = function (callbackFn) {
   const filterResult = [];
 

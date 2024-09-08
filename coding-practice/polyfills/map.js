@@ -1,3 +1,6 @@
+//Polyfill for Map
+//Syntax : array.map((item, index, array) => {})
+
 const numsArray = [1, 2, 3, 4, 5];
 
 Array.prototype.myMap = function (callbackFn) {
