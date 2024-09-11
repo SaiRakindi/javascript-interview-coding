@@ -3,7 +3,7 @@ var b = { key: "b" };
 var c = { key: "c" };
 
 console.log(a);
-// console.log(b);
+console.log(b);
 // console.log(c);
 
 a[b] = 600;
