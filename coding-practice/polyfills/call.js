@@ -15,7 +15,7 @@ purchaseCar.call(car, "500000");
 //polyfill
 Function.prototype.myCall = function (context = {}, ...rest) {
   if (typeof this !== "function") {
-    throw new Error(this, ", is not callable");
+    throw new Error(this + ", is not callable");
   }
 
   context.func = this;
